@@ -8,7 +8,7 @@ import datetime
 import data_push
 from itertools import islice
 import os
-
+import subprocess
 
 api_url = "http://ec2-54-254-162-245.ap-southeast-1.compute.amazonaws.com:9000/items/"
 
@@ -128,4 +128,5 @@ item_id = data_push.push_data_to_api(api_url, cropped_array)
 Pass_Fail = data_push.validate_data_to_api(api_url, cropped_array, item_id)
 
 folder_path = os.path.dirname(os.path.realpath(__file__))
-os.startfile(folder_path)
+
+subprocess.Popen(f'explorer "{folder_path}"')
