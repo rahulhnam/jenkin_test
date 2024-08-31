@@ -7,7 +7,7 @@ pipeline {
                 echo 'Running extraction.py...'
 
                 // Run the Python script
-                bat 'python "C:\\Users\\rahul\\OneDrive\\Desktop\\Automthone\\extraction.py"'
+                bat 'python "extraction.py"'
             }
         }
     }
