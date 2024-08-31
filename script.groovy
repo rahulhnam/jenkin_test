@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }  // Specify the built-in node as the agent
+    agent { label 'mins' }  // Specify the built-in node as the agent
 
     stages {
         stage('Run Python Script') {
